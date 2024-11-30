@@ -64,6 +64,11 @@ Puedes explorar y probar este proyecto mediante una simulación interactiva en W
 5. **Enviar datos a Google Sheets y Excel Online**:
    Las funciones `cargar_datos` en `google_sheets.py` y `microsoft_excel.py` envían los datos a las respectivas hojas de cálculo.
 
+## Funcionalidad en Desarrollo
+
+### Enviar los datos de las mediciones a una hoja de cálculos de Google
+
+**[Ver Hoja de Calculo](https://docs.google.com/spreadsheets/d/1pcTxw9gxgdikChK3UODAOqdXHpwWqttbv10XZhzlk24/edit?gid=0#gid=0)**
 
 ## Licencia
 
