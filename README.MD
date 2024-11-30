@@ -1,12 +1,9 @@
-¡Claro! Aquí tienes un ejemplo de un archivo `README.md` en formato Markdown que describe tu proyecto:
-
-```markdown
 # Proyecto de Monitoreo de Temperatura y Humedad con ESP32
 
 Este proyecto utiliza un ESP32 para leer datos de temperatura y humedad de un sensor DHT22, mostrar los datos en una pantalla OLED SSD1306 y enviarlos a una hoja de cálculo de Google y a una hoja de cálculo de Excel Online. Además, se obtiene la hora actual desde la API de World Time.
 
 ## Diagrama Esquemático
-![Esquema del Circuito](./ESP32_DHT22_OledLCD.png)
+![Esquema del Circuito](ESP32_DHT22_OledLCD.png)
 
 ## Simulación del Circuito
 Puedes explorar y probar este proyecto mediante una simulación interactiva en Wokwi:  
@@ -79,4 +76,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio que te gustaría hacer.
 
 
-```
+
