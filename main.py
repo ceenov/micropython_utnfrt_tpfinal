@@ -4,9 +4,11 @@ from lib.net import obtener_hora_actual
 from lib.sensor_dht22 import medir_temperatura, medir_humedad
 from lib.oled_display import mostrar_datos
 
+# Verificar que esta línea coincida con la ubicación de tu función
+from send_data import enviar_datos  
 
-conectar_wifi
-
+# Intentar conectar a WiFi
+conectar_wifi()
 
 while True:
     temp = medir_temperatura()
@@ -23,6 +25,7 @@ while True:
     if hum is not None:
         print('Humedad: {}%'.format(hum))
     mostrar_datos(temp, hum)
+    enviar_datos(temp, hum, datos_hora)
 
 # Esperar 2 segundos antes de la siguiente lectura
     time.sleep(2)        

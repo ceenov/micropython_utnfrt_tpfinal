@@ -3,7 +3,6 @@ import urequests
 import time
 
 def conectar_wifi():
-    
     ssid = 'CEO_WiFi'
     password = 'abc12345'
 
@@ -12,21 +11,25 @@ def conectar_wifi():
     estacion.connect(ssid, password)
     print('Conectando ...', end="")
 
-    while not estacion.isconnected():
+    for _ in range(50):  # Intentar durante 5 segundos (50 * 0.1s)
+        if estacion.isconnected():
+            print()
+            print('Conectado')
+            config = estacion.ifconfig()
+            print("-"*40)
+            print('Configuración de red:')
+            print(f"IP: {config[0]}")
+            print(f"Mascara de red: {config[1]}")
+            print(f"Gateway: {config[2]}")
+            print(f"DNS: {config[3]}")
+            print("-"*40)
+            return True
         print('.', end="")
         time.sleep(0.1)
 
-    config = estacion.ifconfig()
-
     print()
-    print('Conectado')
-    print("-"*40)
-    print('Configuración de red:')
-    print(f"IP: {config[0]}")
-    print(f"Mascara de red: {config[1]}")
-    print(f"Gateway: {config[2]}")
-    print(f"DNS: {config[3]}")
-    print("-"*40)
+    print('No se pudo conectar a la red WiFi')
+    return False
 
 def obtener_hora_actual():
     try:
