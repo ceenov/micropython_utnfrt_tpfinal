@@ -7,7 +7,7 @@ Este proyecto utiliza un ESP32 para leer datos de temperatura y humedad de un se
 
 ## Simulación del Circuito
 Puedes explorar y probar este proyecto mediante una simulación interactiva en Wokwi:  
-**[Ver Simulación en Wokwi](https://wokwi.com/projects/416022533720037377)**
+**[Ver Simulación en Wokwi](https://wokwi.com/projects/416204083798477825)**
 
 ## Requisitos
 
