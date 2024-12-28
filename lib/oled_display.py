@@ -1,8 +1,10 @@
-from machine import Pin, SoftI2C # Se cambio I2C por SoftI2C
+from machine import Pin, I2C 
 import ssd1306
 
-# Configurar SoftI2C
-i2c = SoftI2C(scl=Pin(22), sda=Pin(21))
+# Configurar I2C
+i2c = I2C(0,
+           scl=Pin(22), 
+           sda=Pin(21) )
 
 # Inicializar la pantalla OLED
 oled_width = 128
